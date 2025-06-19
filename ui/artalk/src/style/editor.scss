@@ -2,7 +2,7 @@
   $editor-padding: 10px;
   position: relative;
   overflow: hidden;
-  background: var(--at-color-bg);
+  background: var(--at-color-bt);
   border: 1px solid var(--at-color-border);
   border-radius: $block-radius;
   margin-bottom: 10px;
@@ -228,5 +228,31 @@
     bottom: 40px;
     width: 225px;
     opacity: 0.83;
+  }
+}
+
+.atk-send-btn:hover {
+    background: var(--at-color-bt-hover);
+}
+
+.atk-send-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; 
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--at-color-primary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  i {
+    color: white;
+    font-size: 16px;
+  }
+
+  &:hover {
+    background-color: var(--at-color-primary-dark);
   }
 }

@@ -18,25 +18,112 @@
   --at-color-yellow: #ff7c37;
   --at-color-green: #4caf50;
   --at-color-gradient: linear-gradient(180deg, transparent, rgba(255, 255, 255));
+  --at-color-bt: rgba(29,47,58,.6);
+  --at-color-bt-hover: rgba(29,47,58,.75);
 
   &.atk-dark-mode {
-    --at-color-font: #fff;
-    --at-color-deep: #e7e7e7;
-    --at-color-sub: #e7e7e7;
-    --at-color-grey: #fff;
-    --at-color-meta: #fff;
-    --at-color-border: #2d3235;
-    --at-color-light: #687a86;
-    --at-color-bg: #1e2224;
-    --at-color-bg-transl: rgba(30, 34, 36, 0.95);
-    --at-color-bg-grey: #46494e;
-    --at-color-bg-grey-transl: rgba(8, 8, 8, 0.95);
-    --at-color-bg-light: rgba(29, 161, 242, 0.1);
-    --at-color-main: #0083ff;
-    --at-color-red: #ff5652;
-    --at-color-pink: #fa5a57;
-    --at-color-yellow: #ff7c37;
-    --at-color-green: #4caf50;
-    --at-color-gradient: linear-gradient(180deg, transparent, rgba(30, 34, 36, 1));
+    --at-color-font: #ffffff;
+    --at-color-deep: #e2e8f0;
+    --at-color-sub: #cbd5e1;
+    --at-color-grey: #94a3b8;
+    --at-color-meta: #64748b;
+    --at-color-bg: #1e293b;
+    --at-color-bg-transl: rgba(30, 41, 59, 0.95);
+    --at-color-bg-grey: #334155;
+    --at-color-bg-grey-transl: rgba(51, 65, 85, 0.95);
+    --at-color-bg-light: rgba(96, 165, 250, 0.1);
+    --at-color-border: #374151;
+    --at-color-light: #64748b;
+    --at-color-main: #ff6b01;
+    --at-color-red: #ef4444;
+    --at-color-pink: #ec4899;
+    --at-color-yellow: #f59e0b;
+    --at-color-green: #10b981;
+    --at-color-gradient: linear-gradient(180deg, transparent, rgba(17, 24, 39, 1));
+
+    /* 引用块样式 */
+    .atk-comment {
+        background-color: rgba(31, 41, 55, 0.3);
+        border-radius: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* 按钮样式 */
+    .atk-send-btn {
+        background: #ff6b01;
+        &:hover {
+            background: #ff8534;
+            opacity: 0.9;
+        }
+    }
+
+    /* 链接样式 */
+    a {
+        color: #ff6b01;
+        &:hover {
+            color: #ff8534;
+        }
+    }
+
+    /* 引用块样式 */
+    blockquote {
+        background: #1f2937;
+        border-left-color: #ff6b01;
+    }
+
+    /* 代码块样式 */
+    pre code {
+        background: #1f2937;
+        border: 1px solid #374151;
+    }
+
+    /* 输入框样式 */
+    input, textarea {
+        background: #1f2937;
+        border: 1px solid #374151;
+        color: #ffffff;
+        &:focus {
+            border-color: #ff6b01;
+        }
+    }
+
+    /* 徽章样式 */
+    .atk-badge {
+        background: #1f2937;
+        border: 1px solid #374151;
+    }
+
+    /* 悬浮效果 */
+    .atk-comment-wrap.atk-openable:hover {
+        background: rgba(31, 41, 55, 0.8);
+    }
+
+    /* 回复区域样式 */
+    .atk-reply-to {
+        background: rgba(31, 41, 55, 0.3);
+        border-left: 3px solid #ff6b01;
+    }
+
+    /* 操作按钮 */
+    .atk-actions > span:hover {
+        color: #ff6b01;
+    }
+
+    /* 加载动画颜色 */
+    .atk-loading-icon {
+        border-top-color: #ff6b01;
+        border-left-color: #ff6b01;
+    }
+
+    /* 表格样式 */
+    table tr:nth-child(2n) {
+        background: rgba(31, 41, 55, 0.5);
+    }
+
+    /* 侧边栏样式 */
+    .atk-sidebar-layer {
+        background: #111827;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    }
   }
 }

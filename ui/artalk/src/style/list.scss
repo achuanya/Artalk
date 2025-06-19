@@ -133,27 +133,6 @@
       }
     }
   }
-
-  & > .atk-list-footer {
-    text-align: right;
-
-    @media only screen and (max-width: 768px) {
-      float: initial;
-      text-align: center;
-    }
-
-    .atk-copyright {
-      display: block;
-      font-size: 12px;
-      color: var(--at-color-meta);
-      padding-right: 15px;
-
-      a {
-        color: var(--at-color-main);
-        text-decoration: none;
-      }
-    }
-  }
 }
 
 .atk-list-no-comment {
