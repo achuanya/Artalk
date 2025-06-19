@@ -50,7 +50,23 @@ func (dao *Dao) FindCreateSite(siteName string, siteURLs string) entity.Site {
 	return r
 }
 
+// FindCreatePage 根据页面键、标题和站点名称查找或创建页面
+// Parameters:
+//   - pageKey: string: 页面唯一标识（如 URL 路径）
+//   - pageTitle: string: 页面标题
+//   - siteName: string: 站点名称
+//
+// Returns:
+//   - entity.Page: 找到或创建页面
 func (dao *Dao) FindCreatePage(pageKey string, pageTitle string, siteName string) entity.Page {
+	// 规范化 URL 路径，统一处理末尾斜杠
+	if len(pageKey) > 0 {
+		// 如果 URL 末尾有斜杠且不是根路径（"/"），则移除末尾斜杠
+		if pageKey != "/" && strings.HasSuffix(pageKey, "/") {
+			pageKey = strings.TrimSuffix(pageKey, "/")
+		}
+	}
+
 	r, _ := FindCreateAction(fmt.Sprintf(PageByKeySiteNameKey, pageKey, siteName), func() (entity.Page, error) {
 		return dao.FindPage(pageKey, siteName), nil
 	}, func() (entity.Page, error) {
