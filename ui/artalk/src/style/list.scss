@@ -71,6 +71,11 @@
         a {
           color: var(--at-color-main);
         }
+
+        .atk-dark-mode &.active span,
+        .atk-dark-mode &.active a {
+          background: rgba(51, 65, 85, 0.95);
+        }
       }
     }
 
@@ -211,5 +216,9 @@
       & > .atk-text {
       }
     }
+  }
+
+  .atk-dark-mode & .atk-list-read-more-inner > .atk-text {
+    color: var(--at-color-main);
   }
 }
