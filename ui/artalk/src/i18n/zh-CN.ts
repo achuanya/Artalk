@@ -2,8 +2,8 @@ import type { I18n } from '.'
 
 const zhCN: I18n = {
   /* Editor */
-  placeholder: '键入内容...',
-  noComment: '「此时无声胜有声」',
+  placeholder: '牛逼的人都会说两句',
+  noComment: '「牛逼的人都会说两句」',
   send: '发送',
   signIn: '登录',
   signUp: '注册',

@@ -12,9 +12,9 @@ test.beforeEach(async ({ page }) => {
 })
 
 test('Comment Add', async ({ page }) => {
-  await page.getByPlaceholder('键入内容...').click()
+  await page.getByPlaceholder('牛逼的人都会说两句').click()
   const CommentContent = '[A New Test Comment Content Here]'
-  await page.getByPlaceholder('键入内容...').fill(CommentContent)
+  await page.getByPlaceholder('牛逼的人都会说两句').fill(CommentContent)
   await page.getByRole('button', { name: '发送评论' }).click()
   await page.waitForResponse('http://localhost:23366/api/v2/comments')
   expect(await page.locator('.atk-list').getByText(CommentContent).isVisible()).toBeTruthy()

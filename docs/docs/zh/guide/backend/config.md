@@ -170,8 +170,8 @@ Artalk.init({ site: 'Artalk 官网' })
 
 ```yaml
 frontend:
-  placeholder: 键入内容...
-  noComment: 「此时无声胜有声」
+  placeholder: 牛逼的人都会说两句
+  noComment: 「牛逼的人都会说两句」
   sendBtn: 发送评论
   emoticons: 'https://raw.githubusercontent.com/ArtalkJS/Emoticons/master/grps/default.json'
   # ----- 此处省略 -------

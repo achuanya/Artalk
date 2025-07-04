@@ -73,7 +73,7 @@
       }
 
       .atk-dark-mode &:hover,
-      .atk-dark-mode &.active {
+       &.active {
         background: rgba(51, 65, 85, 0.95);
       }
     }
