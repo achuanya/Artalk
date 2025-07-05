@@ -10,7 +10,7 @@
     "dev:landing": "pnpm -F=docs-landing dev",
     "build": "pnpm -F artalk build",
     "build:sidebar": "pnpm -F @artalk/artalk-sidebar build",
-    "build:all": "pnpm build && pnpm build:sidebar",
+    "build:all": "pnpm -F artalk build:main",
     "build:plugins": "pnpm -F @artalk/plugin-* build",
     "build:auth": "pnpm -F @artalk/plugin-auth build",
     "build:plugin-kit": "pnpm -F @artalk/plugin-kit build",
