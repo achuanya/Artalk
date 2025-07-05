@@ -291,11 +291,7 @@
       background: var(--at-color-bg-grey);
     }
   }
-
-  .atk-dark-mode &.atk-height-limit-btn {
-    color: var(--at-color-main);
-  }
-
+  
   // 避免重复显示按钮
   .atk-height-limit .atk-height-limit .atk-height-limit-btn {
     display: none;
@@ -352,4 +348,8 @@
       }
     }
   }
+}
+
+.atk-dark-mode .atk-height-limit-btn {
+  color: var(--at-color-main);
 }
